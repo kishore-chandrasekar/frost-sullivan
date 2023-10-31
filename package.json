@@ -1,0 +1,13 @@
+{
+    "name": "my-fullstack-app",
+    "version": "1.0.0",
+    "description": "Full-stack application using Vue.js and Node.js",
+    "scripts": {
+        "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+        "start-frontend": "cd frontend && npm run serve",
+        "start-backend": "cd backend && npm start"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
